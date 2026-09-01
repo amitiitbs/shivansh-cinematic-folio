@@ -203,14 +203,14 @@
 [data-cursor][data-project="true"] span { display: block; }
 
 @media (max-width: 1023px) {
-  @utility page-shell { width: min(100% - 64px, 1380px); }
+  .page-shell { width: min(100% - 64px, 1380px); }
   .hero-copy { grid-column: 1 / span 7; }
   .float-card-one { right: 18%; }
   .float-card-three { right: 20%; }
 }
 
 @media (max-width: 767px) {
-  @utility page-shell { width: calc(100% - 40px); }
+  .page-shell { width: calc(100% - 40px); }
   body, a, button { cursor: auto; }
   [data-cursor] { display: none; }
   .hero { min-height: 940px; }
