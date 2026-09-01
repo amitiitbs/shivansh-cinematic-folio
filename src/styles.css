@@ -218,7 +218,7 @@
   .hero-copy { position: relative; padding-top: 150px; }
   .hero-title { font-size: clamp(58px, 17vw, 68px); line-height: .88; margin-top: 20px; }
   .hero-description { max-width: 310px; margin-top: 22px; }
-  .hero-portrait { top: 34%; right: -20%; width: 105%; height: 68%; opacity: .82; mask-image: linear-gradient(to bottom, transparent, black 14%, black 62%, transparent 100%); }
+  .hero-portrait { top: 34%; right: -5%; width: 95%; height: 68%; opacity: .82; mask-image: linear-gradient(to bottom, transparent, black 14%, black 62%, transparent 100%); }
   .hero-service { display: none; }
   .float-card { min-width: 126px; padding: 13px 14px; }
   .float-card-one { top: 62%; left: 0; right: auto; }
