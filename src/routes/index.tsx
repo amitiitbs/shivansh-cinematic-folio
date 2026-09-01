@@ -141,8 +141,8 @@ function CustomCursor() {
     };
     const over = (event: MouseEvent) => {
       const target = event.target as HTMLElement;
-      cursor.dataset.active = String(Boolean(target.closest("a, button")));
-      cursor.dataset.project = String(Boolean(target.closest("[data-project]")));
+      cursor.dataset["active"] = String(Boolean(target.closest("a, button")));
+      cursor.dataset["project"] = String(Boolean(target.closest("[data-project]")));
     };
     window.addEventListener("mousemove", move);
     window.addEventListener("mouseover", over);
@@ -173,7 +173,7 @@ function Index() {
         <section id="home" className="hero">
           <div className="hero-light" />
           <motion.img
-            initial={reducedMotion ? undefined : { opacity: 0, scale: 1.05 }}
+            initial={reducedMotion ? false : { opacity: 0, scale: 1.05 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1.4, ease: "easeOut" }}
             src={portrait}
@@ -185,7 +185,7 @@ function Index() {
           />
           <div className="page-shell hero-grid">
             <motion.div
-              initial={reducedMotion ? undefined : "hidden"}
+              initial={reducedMotion ? false : "hidden"}
               animate="visible"
               variants={{ visible: { transition: { staggerChildren: 0.12 } } }}
               className="hero-copy"
